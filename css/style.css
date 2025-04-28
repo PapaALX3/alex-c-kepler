@@ -1,21 +1,82 @@
 body {
     background-color: rgb(255, 225, 0);
     color: black;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Tangerine", serif;
+    font-size: 68px;
     text-align: center;
-    margin: 0px 40px;
+    margin: 0 px 5px;
+    padding: 0px;
+}
+h2 {
+    font-size: 32px;
+    color: black;
+    padding: 0px 25px;
+}
+
+h3 {
+
+}
+ 
+li {
+    border: black 2px solid;
+    border-radius: 7px;
+    margin: 1px 0px;
 }
 
 header {
     background-color: cornflowerblue;
     color: black;
-    border: black 30px;
-    margin: 0 auto;
+    border-top: black 5px solid;
+    border-bottom: black 5px solid;
+    padding: 5px;
+    margin: 0px auto;
+}
+
+.AboutTitle {
+    display: flex;
 }
 
 main{
     background-color: orange;
+    font-family: "Figtree", italic;
+    padding: 10px;
+    margin: 25px 0px;
 }
 
+.section {
+    color:blueviolet;
+}
+
+#image {
+    text-align: center;
+    color: black;
+    border: 2px rgb(207, 216, 31) solid;
+    margin-top: 10px;
+}
+
+#Experience {
+    text-align: center;
+    color: black;
+}
+
+#About {
+    border: 2px black solid;
+    padding: 20px;
+}
+.columns {
+    display: flex;
+}
+.column {
+    margin: 0 auto;
+    padding: 20px;
+}
+#Connect {
+    text-align: center;
+}
 footer {
     background-color: rgb(207, 216, 31);
     color: seagreen;
