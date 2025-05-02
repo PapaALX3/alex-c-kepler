@@ -11,6 +11,7 @@ h1 {
     margin: 0 px 5px;
     padding: 0px;
 }
+
 h2 {
     font-size: 32px;
     color: black;
@@ -22,29 +23,62 @@ h3 {
 }
  
 li {
-    border: black 2px solid;
-    border-radius: 7px;
-    margin: 1px 0px;
+
+}
+
+.Navigation-Bar {
+    background-color: rgb(161, 169, 13);
+    border-bottom: black solid 2px;
+    border-top: solid black 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: auto 0px;
+    padding: 10px;
 }
 
 header {
     background-color: cornflowerblue;
     color: black;
-    border-top: black 5px solid;
+    border-top: black 0px solid;
     border-bottom: black 5px solid;
-    padding: 5px;
-    margin: 0px auto;
+    margin: auto 0px;
+    padding: 5px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 17px;
+    margin: 0px 25px;
+}
+
+header a:hover{
+    cursor: pointer;
+    color: black;
 }
 
 .AboutTitle {
     display: flex;
 }
 
+#About {
+    border: 2px black solid;
+    padding: 20px;
+}
+
 main{
     background-color: orange;
     font-family: "Figtree", italic;
     padding: 10px;
-    margin: 25px 0px;
+    margin: 250px 0px 20px;
 }
 
 .section {
@@ -61,12 +95,17 @@ main{
 #Experience {
     text-align: center;
     color: black;
+
+}
+#Experience ul{
+    text-decoration: none;
+    justify-content: space-between;
+    list-style: none;
+    display:flex;
+    margin: auto 0px;
+    padding: 0px;
 }
 
-#About {
-    border: 2px black solid;
-    padding: 20px;
-}
 .columns {
     display: flex;
 }
@@ -80,4 +119,5 @@ main{
 footer {
     background-color: rgb(207, 216, 31);
     color: seagreen;
+    margin-bottom: 30px;
 }
