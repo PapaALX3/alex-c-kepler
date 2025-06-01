@@ -1,4 +1,4 @@
-/* css for tablets,laptop screen- START */
+/* css for desktop screens- START */
 body {
     background-color: rgb(255, 225, 0);
     color: black;
@@ -120,7 +120,8 @@ footer {
     color: seagreen;
     margin-bottom: 30px;
 }
-/* css for desktop screen- END */
+
+/* css for desktop screens- END */
 
 /* css for mobile devices- START */
 @media (max-width: 480px) {
@@ -163,7 +164,7 @@ footer {
 @media (min-width: 1024px) {
     
     body {
-        background-color: rgb(94, 1, 1);
+        background-color: rgb(178, 54, 54);
     }
 
     header a {
