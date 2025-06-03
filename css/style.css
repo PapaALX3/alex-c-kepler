@@ -50,7 +50,7 @@ header {
 header a{
     text-decoration: none;
     display: block;
-    color: white;
+    color: rgb(202, 199, 199);
     font-size: 17px;
     margin: 0px 25px;
 }
@@ -71,13 +71,13 @@ header a:hover{
 
 main{
     background-color: orange;
-    font-style: "Figtree";
-    padding: 10px;
-    margin-top: 250px;
+    font-style: "Figtree", sans-serif;
+    padding-top: 100px;
+ 
 }
 
 .section {
-    color:blueviolet;
+    color:white;
 }
 
 #image {
@@ -93,7 +93,6 @@ main{
 
 }
 #Experience ul, #Skills ul{
-    text-decoration: none;
     justify-content: space-between;
     list-style: none;
     display:flex;
@@ -119,6 +118,12 @@ footer {
     background-color: rgb(207, 216, 31);
     color: seagreen;
     margin-bottom: 30px;
+}
+
+#messages {
+    color:black;
+    margin: 60px 0px;
+    
 }
 
 /* css for desktop screens- END */
