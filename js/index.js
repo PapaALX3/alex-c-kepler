@@ -39,7 +39,6 @@ const messageForm = document.getElementsByName('leave_message')[0].addEventListe
         const messageList = messageSection.querySelector('ul');
 
         const newMessage = document.createElement('li');
-
         newMessage.innerHTML = `<a href="mailto:${email}">${user}</a><span> ${message}</span>`;
 
         const removeButton = document.createElement('button');
@@ -53,12 +52,12 @@ const messageForm = document.getElementsByName('leave_message')[0].addEventListe
        
        
         if (messageList) {
-            removeButton.appendChild(newMessage);
+            newMessage.appendChild(removeButton);
             messageList.append(newMessage);   
         }
     }   
     
-        messageForm.reset();     
+        this.reset();     
     
     });
 
@@ -70,18 +69,17 @@ const messageForm = document.getElementsByName('leave_message')[0].addEventListe
             }
         return response.json();
     })
-    .then(PapaALX3 => console.log(PapaALX3))
+    .then(PapaALX3 => {
+        for(let l = 0; l < PapaALX3.length; l++){ 
+                var repoName = PapaALX3[l].full_name;
+                const projectSection = document.createElement('section');
+                const projectList = document.createElement('ul');
+                const project = document.createElement('li');
+                project.innerText = repoName; 
+                projectList.appendChild(project); 
+                projectSection.appendChild(projectList);
+                document.getElementById('Projects').appendChild(projectSection);
+        }
+    });
     
-    console.log(PapaALX3);
-    const projectSection = document.createElement('section');
-    const projectList = document.createElement('ul');
-
-    for(let l = 0; l < PapaALX3.length; l++){
-            const project = document.createElement('li');
-            project.innerText = PapaALX3[l].name; 
-            projectList.appendChild(project); 
-    }
-    document.body.appendChild(projectSection);
-    projectSection.appendChild(projectList);
-/*.catch(error => console.log('fetch error:', error));*/
  
